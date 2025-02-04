@@ -1,0 +1,151 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    max-width: 960px; /* Limit width for readability */
+    margin: 0 auto;  /* Center the content */
+}
+
+.header {
+    background-color: #00a3a3;
+    color: white;
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.banner {
+    background-color: #e0f2f1; /* Lighter shade of teal */
+    color: #333;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.banner:hover {
+    background-color: #b2dfdb; /* Slightly darker on hover */
+}
+
+.banner .title {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the title and icon (if you add one) */
+}
+
+.banner .subtitle {
+    font-size: 1em;
+    margin-top: 5px;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+    color: #666;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.step-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.dialogue {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Dialogue variations */
+.dialogue.assistant {
+    background-color: #e0f7fa; /* Light Cyan */
+    text-align: left;
+}
+
+.dialogue.user {
+    background-color: #f0f0f0; /* Light Grey */
+    text-align: right;
+}
+
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown label {
+    font-weight: bold;
+}
+
+.dropdown select {
+    font-size: 1em;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Zebra striping for tables */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.time-title {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .banner .title {
+        font-size: 1em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto; /* Enable horizontal scrolling for tables on small screens */
+    }
+}
